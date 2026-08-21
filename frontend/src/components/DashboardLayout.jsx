@@ -9,6 +9,7 @@ import NotificationCenter from './NotificationCenter.jsx';
 import Beams from '../components/Background';
 
 const commonLinks = [
+  { to: '/analytics', icon: Activity, label: 'Live Analytics' },
   { to: '/community', icon: Users, label: 'Community' },
   { to: '/leaderboard', icon: Award, label: 'Leaderboard' },
   { to: '/assistant', icon: MessageCircle, label: 'AI Assistant' },
@@ -22,7 +23,6 @@ const citizenLinks = [
 
 const adminLinks = [
   { to: '/admin', icon: Shield, label: 'Dashboard' },
-  { to: '/analytics', icon: Activity, label: 'Live Analytics' },
   { to: '/admin/analytics', icon: BarChart2, label: 'Reports' },
   { to: '/admin/map', icon: Map, label: 'Map View' },
 ];

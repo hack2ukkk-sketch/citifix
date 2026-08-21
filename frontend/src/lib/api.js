@@ -174,6 +174,11 @@ export const twoFactorApi = {
       method: "POST",
       body: JSON.stringify({ token }),
     }),
+  verifySetupLogin: (tempToken, token) =>
+    request("/auth/2fa/verify-setup-login", {
+      method: "POST",
+      body: JSON.stringify({ tempToken, token }),
+    }),
   verifyLogin: (tempToken, token) =>
     request("/auth/2fa/verify-login", {
       method: "POST",
